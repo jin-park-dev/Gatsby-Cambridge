@@ -15,6 +15,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <div className="mt-5">test tailwind</div>
   </Layout>
 )
 

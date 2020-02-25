@@ -1,11 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Img from 'gatsby-image';
 import {graphql} from 'gatsby'
-import './about.css'; 
+import './about.css';
 
 export const query = graphql`
 query {
@@ -24,6 +22,7 @@ query {
 
 const About = (props) => {
   console.log(query)
+  console.log(props.data.file)
   return (
     <Layout>
       <h2>Hello , my name is Developer</h2>
@@ -59,7 +58,6 @@ const About = (props) => {
             <img alt="Sass" className={"logo"} src="./logos/sass-1.svg" />
           </div>
 
-
           <div className={"socialContainer"}>
             <p>Send me a message!</p>
             <a className={"social"} href="https://github.com/jin-park-dev"><i className="fab fa-github"></i></a>
@@ -68,10 +66,7 @@ const About = (props) => {
             {/*<a className={social} href="https://www.youtube.com/channel/UC9nNIxlNohIoIrjtC4ueIOA"><i className="fab fa-youtube"></i></a>*/}
             {/*<a className={social} href="https://www.twitter.com/codigomate"><i class="fab fa-twitter"></i></a>*/}
           </div>
-
-
         </div>
-
       </div>
     </Layout>
   )

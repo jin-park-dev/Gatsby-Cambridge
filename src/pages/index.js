@@ -4,16 +4,41 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import portfolioItems from '../components/portfolio-items';
+
+import './index.css';
+
+
+function renderFolio() {
+  return  portfolioItems.map(({title, synopsis, idx, desc, repo, live,img}) => {
+    console.log(title);
+    return (
+      <div key={'div' + idx} className="tab">
+        <input key={'index' + idx}  type="checkbox" id={idx + title}/>
+        <label key={'label' + idx}  className="tab-label" for={idx + title}>
+          <span key={'pTit' + idx} className='folio-title'>{title} </span>
+          <span key={'dot' + idx} className='folio-title'>· </span>
+          <span  key={'pSinop' + idx} className='folio-synopsis'>{synopsis}</span>
+        </label>
+        <div key={'tab' + idx} class="tab-content">
+          <img alt="nicasia" src={img}/>
+          {desc}
+          <span className="repolinks" key={'repo' + idx}><a key={'repoLink' + idx} href={repo}>Github Repo</a></span>
+          {live ? <span className="repolinks" key={'live' + idx}><a key={'liveLink' + idx} href={repo}>Check it live</a></span> : null }
+        </div>
+      </div>
+    )
+  })
+}
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>I am Developer</h1>
-    <p>These are a few of my projects. Open up for repo and live version!</p>
-    <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    {renderFolio()}
   </Layout>
 )
 

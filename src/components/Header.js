@@ -41,7 +41,7 @@ const Header = () => {
           |
           <Link className="mx-3" to="/about">About</Link>
         </div>
-        <hr/>
+        <hr className="mx-2 sm:mx-8 md:mx-24 lg:mx-32"/>
       </div>
     </div>
   )

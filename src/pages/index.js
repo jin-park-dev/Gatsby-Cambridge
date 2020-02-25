@@ -16,9 +16,10 @@ function renderFolio() {
       <div key={'div' + idx} className="tab">
         <input key={'index' + idx}  type="checkbox" id={idx + title}/>
         <label key={'label' + idx}  className="tab-label" for={idx + title}>
+          {/*w-3/12 w-1/12 w-8/12*/}
           <span key={'pTit' + idx} className='folio-title'>{title} </span>
-          <span key={'dot' + idx} className='folio-title'>· </span>
-          <span  key={'pSinop' + idx} className='folio-synopsis'>{synopsis}</span>
+          <span key={'dot' + idx} className='folio-title '>· </span>
+          <span  key={'pSinop' + idx} className='folio-synopsis w-8/12'>{synopsis}</span>
         </label>
         <div key={'tab' + idx} class="tab-content">
           <img alt="nicasia" src={img}/>
@@ -35,9 +36,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>I am Developer</h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    {/*<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>*/}
+    {/*  <Image />*/}
+    {/*</div>*/}
     {renderFolio()}
   </Layout>
 )

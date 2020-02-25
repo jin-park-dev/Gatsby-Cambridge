@@ -29,11 +29,11 @@
   padding: 20rem 20rem;
 }
 
-/*input {*/
-/*  position: absolute;*/
-/*  opacity: 0;*/
-/*  z-index: -1;*/
-/*}*/
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
 
 .tabs {
   border-radius: 8px;

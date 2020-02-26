@@ -27,18 +27,18 @@ const About = (props) => {
     <Layout>
       <h2>Hello , my name is Developer</h2>
 
-      <div className={"main"}>
-        <div className={"izquierda"}>
+      <div className="flex flex-col sm:flex-row text-sm">
+        <div className="w-4/12">
           {/*<div className={"imagen"}> <Img className={"img"} fluid={props.data.file.childImageSharp.fluid} /></div>*/}
-          <div className={"texto"}>
-            <div className={"iconos"}><i className="fas fa-map-marker-alt fa-sm"></i><p>Cambridge, United Kingdom</p></div>
-            <div className={"iconos"}><i className="fas fa-graduation-cap fa-sm"></i><p>University of life</p></div>
-            <div className={"iconos"}><i className="fas fa-code fa-sm"></i><p>HTML, JS, CSS, SQL, PYTHON, CLOJURE</p></div>
-            <div className={"iconos"}><i className="fas fa-language fa-sm"></i><p>English, Korean</p></div>
+          <div className="flex flex-col">
+            <div className="flex flex-row items-center"><i className="fas fa-map-marker-alt fa-sm"></i><div>Cambridge, United Kingdom</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-graduation-cap fa-sm"></i><div>University of life</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-code fa-sm"></i><div>HTML, JS, CSS, SQL, PYTHON, CLOJURE</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-language fa-sm"></i><div>English, Korean</div></div>
           </div>
 
         </div>
-        <div className={"derecha"}>
+        <div className="w-8/12">
           <p>
             Healthy float waves wrap gnarley Trestles oil water indy? Clamped blonde rigs capped out socked in, blown out fresh stick healthy float stall, waves Taj Burrow. Fan a spray foam ball clamped rip the pit shacked priority frothy top dry hair paddle out insider. Oil barreling, carve crumbly lip in the bricks white water sand bar fighting for the peak. Twin fin freshie reef urll make the paddle layback hammer blonde rigs slob priority. Drifting the tail rinsed salt water pit above the lip. Stab mag, double up nice little fish kook legend J.O.B. rock-n-roll socked in.
           </p><p>

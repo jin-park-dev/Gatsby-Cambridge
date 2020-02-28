@@ -27,18 +27,18 @@ const About = (props) => {
     <Layout>
       <h2>Hello, my name is Jin</h2>
 
-      <div className="flex flex-col sm:flex-row text-sm">
-        <div className="w-4/12">
+      <div className="flex flex-col sm:flex-row text-sm items-center sm:items-start">
+        <div className="w-12/12 sm:w-4/12">
           {/*<div className={"imagen"}> <Img className={"img"} fluid={props.data.file.childImageSharp.fluid} /></div>*/}
           <div className="flex flex-col">
-            <div className="flex flex-row items-center"><i className="fas fa-map-marker-alt fa-sm w-1/12"></i><div className="w-11/12">Cambridge, United Kingdom</div></div>
-            <div className="flex flex-row items-center"><i className="fas fa-graduation-cap fa-sm w-1/12"></i><div className="w-11/12">University of life</div></div>
-            <div className="flex flex-row items-center"><i className="fas fa-code fa-sm w-1/12"></i><div className="w-11/12">HTML, JS, CSS, SQL, PYTHON, CLOJURE</div></div>
-            <div className="flex flex-row items-center"><i className="fas fa-language fa-sm w-1/12"></i><div className="w-11/12">English, Korean</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-map-marker-alt fa-sm w-1/12 lg:w-1/12"></i><div className="w-11/12 lg:w-11/12">Cambridge, United Kingdom</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-graduation-cap fa-sm w-1/12 lg:w-1/12"></i><div className="w-11/12 lg:w-11/12">University of life</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-code fa-sm w-1/12 lg:w-1/12"></i><div className="w-11/12 lg:w-11/12">HTML, JS, CSS, SQL, PYTHON, CLOJURE</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-language fa-sm w-1/12 lg:w-1/12"></i><div className="w-11/12 lg:w-11/12">English, Korean</div></div>
           </div>
 
         </div>
-        <div className="w-8/12">
+        <div className="w-12/12 sm:w-8/12">
           <p>
             Healthy float waves wrap gnarley Trestles oil water indy? Clamped blonde rigs capped out socked in, blown out fresh stick healthy float stall, waves Taj Burrow. Fan a spray foam ball clamped rip the pit shacked priority frothy top dry hair paddle out insider. Oil barreling, carve crumbly lip in the bricks white water sand bar fighting for the peak. Twin fin freshie reef urll make the paddle layback hammer blonde rigs slob priority. Drifting the tail rinsed salt water pit above the lip. Stab mag, double up nice little fish kook legend J.O.B. rock-n-roll socked in.
           </p><p>
@@ -49,13 +49,13 @@ const About = (props) => {
 
           <div className={"logoContainer"}>
             <p>Some of the tech I like:</p>
-            <img alt="javascript" className={"logo"} src="./logos/javascript.svg" />
-            <img alt="Gatsby" className={"logo"} src="./logos/gatsby.svg" />
-            <img alt="GraphQl" className={"logo"} src="./logos/graphql.svg" />
-            <img alt="React" className={"logo"} src="./logos/react.svg" />
-            <img alt="nodeJs" className={"logo"} src="./logos/nodejs-icon.svg" />
-            <img alt="Mongo" className={"logo"} src="./logos/mongodb.png" />
-            <img alt="Sass" className={"logo"} src="./logos/sass-1.svg" />
+            <img alt="javascript" className={"logo w-8"} src="./logos/javascript.svg" />
+            <img alt="Gatsby" className={"logo w-8"} src="./logos/gatsby.svg" />
+            <img alt="GraphQl" className={"logo w-8"} src="./logos/graphql.svg" />
+            <img alt="React" className={"logo w-8"} src="./logos/react.svg" />
+            <img alt="nodeJs" className={"logo w-8"} src="./logos/nodejs-icon.svg" />
+            <img alt="Mongo" className={"logo w-8"} src="./logos/mongodb.png" />
+            <img alt="Sass" className={"logo w-8"} src="./logos/sass-1.svg" />
           </div>
 
           <div className={"socialContainer"}>

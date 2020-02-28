@@ -38,7 +38,7 @@ const About = (props) => {
           </div>
 
         </div>
-        <div className="w-12/12 sm:w-8/12">
+        <div className="w-12/12 sm:w-8 md:w-2/12 lg:w-8/12">
           <p>
             Healthy float waves wrap gnarley Trestles oil water indy? Clamped blonde rigs capped out socked in, blown out fresh stick healthy float stall, waves Taj Burrow. Fan a spray foam ball clamped rip the pit shacked priority frothy top dry hair paddle out insider. Oil barreling, carve crumbly lip in the bricks white water sand bar fighting for the peak. Twin fin freshie reef urll make the paddle layback hammer blonde rigs slob priority. Drifting the tail rinsed salt water pit above the lip. Stab mag, double up nice little fish kook legend J.O.B. rock-n-roll socked in.
           </p><p>
@@ -47,15 +47,20 @@ const About = (props) => {
           Fog Eddie would go layback daggers barreling backside board lefts. Pitted silky smooth John John Florence reef brah, pump. Rippin blow tail fins free reef ripping knee high full mad air reverse? Paddle out Simpo psyching tri fin, down the line, no kooks speed hack waves. Pump send it sand bottom section Jordy Smith insider no kooks, over the reef epic snake.
         </p>
 
-          <div className={"logoContainer"}>
-            <p>Some of the tech I like:</p>
-            <img alt="javascript" className={"logo w-8"} src="./logos/javascript.svg" />
-            <img alt="Gatsby" className={"logo w-8"} src="./logos/gatsby.svg" />
-            <img alt="GraphQl" className={"logo w-8"} src="./logos/graphql.svg" />
-            <img alt="React" className={"logo w-8"} src="./logos/react.svg" />
-            <img alt="nodeJs" className={"logo w-8"} src="./logos/nodejs-icon.svg" />
-            <img alt="Mongo" className={"logo w-8"} src="./logos/mongodb.png" />
-            <img alt="Sass" className={"logo w-8"} src="./logos/sass-1.svg" />
+          <div className="flex flex-col items-center">
+            <div>
+              <p>Some of the tech I like:</p>
+            </div>
+            {/*w-8 md:w-2/12 lg:w-8*/}
+            <div className="flex flex-row flex-wrap justify-center">
+              <img alt="javascript" className="w-8 mx-4" src="./logos/javascript.svg" />
+              <img alt="Gatsby" className="w-8 mx-4" src="./logos/gatsby.svg" />
+              <img alt="GraphQl" className="w-8 mx-4" src="./logos/graphql.svg" />
+              <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />
+              <img alt="nodeJs" className="w-8 mx-4" src="./logos/nodejs-icon.svg" />
+              <img alt="Mongo" className="w-8 mx-4" src="./logos/mongodb.png" />
+              <img alt="Sass" className="w-8 mx-4" src="./logos/sass-1.svg" />
+            </div>
           </div>
 
           <div className={"socialContainer"}>

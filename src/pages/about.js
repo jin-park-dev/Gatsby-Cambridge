@@ -38,7 +38,7 @@ const About = (props) => {
           </div>
 
         </div>
-        <div className="w-12/12 sm:w-8 md:w-2/12 lg:w-8/12">
+        <div className="w-12/12 lg:w-8/12">
           <p>
             Healthy float waves wrap gnarley Trestles oil water indy? Clamped blonde rigs capped out socked in, blown out fresh stick healthy float stall, waves Taj Burrow. Fan a spray foam ball clamped rip the pit shacked priority frothy top dry hair paddle out insider. Oil barreling, carve crumbly lip in the bricks white water sand bar fighting for the peak. Twin fin freshie reef urll make the paddle layback hammer blonde rigs slob priority. Drifting the tail rinsed salt water pit above the lip. Stab mag, double up nice little fish kook legend J.O.B. rock-n-roll socked in.
           </p><p>

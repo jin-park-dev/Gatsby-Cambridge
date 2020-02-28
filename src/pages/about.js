@@ -25,16 +25,16 @@ const About = (props) => {
   console.log(props.data.file)
   return (
     <Layout>
-      <h2>Hello , my name is Developer</h2>
+      <h2>Hello, my name is Jin</h2>
 
       <div className="flex flex-col sm:flex-row text-sm">
         <div className="w-4/12">
           {/*<div className={"imagen"}> <Img className={"img"} fluid={props.data.file.childImageSharp.fluid} /></div>*/}
           <div className="flex flex-col">
-            <div className="flex flex-row items-center"><i className="fas fa-map-marker-alt fa-sm"></i><div>Cambridge, United Kingdom</div></div>
-            <div className="flex flex-row items-center"><i className="fas fa-graduation-cap fa-sm"></i><div>University of life</div></div>
-            <div className="flex flex-row items-center"><i className="fas fa-code fa-sm"></i><div>HTML, JS, CSS, SQL, PYTHON, CLOJURE</div></div>
-            <div className="flex flex-row items-center"><i className="fas fa-language fa-sm"></i><div>English, Korean</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-map-marker-alt fa-sm w-1/12"></i><div className="w-11/12">Cambridge, United Kingdom</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-graduation-cap fa-sm w-1/12"></i><div className="w-11/12">University of life</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-code fa-sm w-1/12"></i><div className="w-11/12">HTML, JS, CSS, SQL, PYTHON, CLOJURE</div></div>
+            <div className="flex flex-row items-center"><i className="fas fa-language fa-sm w-1/12"></i><div className="w-11/12">English, Korean</div></div>
           </div>
 
         </div>

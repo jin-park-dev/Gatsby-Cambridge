@@ -68,7 +68,11 @@ const About = (props) => {
             </div>
             {/*w-8 md:w-2/12 lg:w-8*/}
             <div className="flex flex-row flex-wrap justify-center">
-              <img alt="javascript" className="w-8 mx-4" src="./logos/javascript.svg" />
+              <div className="flex flex-col justify-center items-center">
+                <div className=""><img alt="javascript" className="w-8 mx-4 m-auto" src="./logos/javascript.svg" /></div>
+                <div>Javascript</div>
+              </div>
+
               <img alt="Gatsby" className="w-8 mx-4" src="./logos/gatsby.svg" />
               <img alt="GraphQl" className="w-8 mx-4" src="./logos/graphql.svg" />
               <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />

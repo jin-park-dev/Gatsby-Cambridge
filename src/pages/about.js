@@ -68,17 +68,22 @@ const About = (props) => {
             </div>
             {/*w-8 md:w-2/12 lg:w-8*/}
             <div className="flex flex-row flex-wrap justify-center">
-              <div className="flex flex-col justify-center items-center">
-                <div className=""><img alt="javascript" className="w-8 mx-4 m-auto" src="./logos/javascript.svg" /></div>
-                <div>Javascript</div>
-              </div>
 
+              {/*<div className="flex flex-col justify-center items-center">*/}
+              {/*  <div className="flex flex-row justify-center items-center"><img alt="javascript" className="w-8" src="./logos/javascript.svg" /></div>*/}
+              {/*  <div>Javascript</div>*/}
+              {/*</div>*/}
+
+              <img alt="javascript" className="w-8 mx-4" src="./logos/javascript.svg" />
               <img alt="Gatsby" className="w-8 mx-4" src="./logos/gatsby.svg" />
               <img alt="GraphQl" className="w-8 mx-4" src="./logos/graphql.svg" />
               <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />
               <img alt="nodeJs" className="w-8 mx-4" src="./logos/nodejs-icon.svg" />
               <img alt="Mongo" className="w-8 mx-4" src="./logos/mongodb.png" />
               <img alt="Sass" className="w-8 mx-4" src="./logos/sass-1.svg" />
+
+              <img alt="Python`" className="w-8 mx-4" src="./logos/python1.png" />
+              <img alt="Python`" className="w-8 mx-4" src="./logos/python2.png" />
             </div>
           </div>
 

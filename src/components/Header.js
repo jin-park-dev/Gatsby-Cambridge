@@ -39,6 +39,8 @@ const Header = () => {
         <div className="mb-6">
           <Link className="mx-3" to="/">Portfolio</Link>
           |
+          <Link className="mx-3" to="/hosting">Self-Host</Link>
+          |
           <Link className="mx-3" to="/about">About</Link>
         </div>
         <hr className="mx-2 sm:mx-8 md:mx-24 lg:mx-32"/>

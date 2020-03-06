@@ -1,0 +1,13 @@
+.twirl-section {
+  /*overflow: hidden;*/
+  transition: max-height 0.3s ease;
+  height: auto;
+  max-height: 900px;
+}
+
+.twirl-section-collapsed {
+  max-height: 0;
+  /*line-height:0;*/
+  /*height: 0;*/
+  overflow: hidden;
+}

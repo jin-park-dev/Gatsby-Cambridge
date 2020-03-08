@@ -13,7 +13,7 @@ import Portfolio from "../components/Portfolio"
 function renderFolio() {
   return  portfolioItems.map((portfolioItem) => {
     return (
-      <Portfolio portfolioItem={portfolioItem} />
+      <Portfolio key={`k${portfolioItem.idx}`} portfolioItem={portfolioItem} />
     )
   })
 }

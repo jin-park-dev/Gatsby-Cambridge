@@ -4,8 +4,10 @@ const portfolioItems = [
     synopsis: 'Kanban Board with pomodoro timer. Build with React/Redux, Django REST.',
     desc: 'Custom Kanban Board with pomodoro timer. React/Redux, React-Beautiful-Dnd, Django REST, Django ORM, SQL.',
     img: './portfolio/faduense.png',
-    live: 'https://www.kanxdoro.com',
-    repo: 'https://github.com/jin-park-dev/React-LifeBoard',
+    links: [
+      { "url": "https://www.kanxdoro.com", "content": "Link to KanXDoro" },
+      { "url": "https://github.com/jin-park-dev/React-LifeBoard", "content": "Link to github" },
+    ],
     idx: 1
   },
   {
@@ -13,8 +15,10 @@ const portfolioItems = [
     synopsis: 'Wagtail CMS (Based on Django) for longest running bachata performance group in UK.',
     desc: 'Wagtail CMS (Based on Django) for longest running bachata performance group in UK - Bachata Obsesión Dance Team.',
     img: './portfolio/bitcoin.png',
-    live: 'https://www.bachatacambridge.com',
-    repo: 'https://github.com/jin-park-dev/bodt-cms',
+    links: [
+      { "url": "https://www.bachatacambridge.com", "content": "Link to Bachata Cambridge" },
+      { "url": "https://github.com/jin-park-dev/bodt-cms", "content": "Link to github" },
+    ],
     idx: 2
   },
   // {

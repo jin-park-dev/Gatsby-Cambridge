@@ -3,6 +3,9 @@ import "./Portfolio.css"
 
 
 function renderFolioLinks(links) {
+  /**
+   * In format "content text": ""
+   */
   return Object.keys(links).map((cur) => {
       return <div className="" key={"live" + cur}><a key={"liveLink" + cur} href={links[cur]}>{cur}</a></div>
     },

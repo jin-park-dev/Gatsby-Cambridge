@@ -5,6 +5,15 @@ import "./Portfolio.css"
 function renderFolioLinks(links) {
   /**
    * In format "content text": ""
+   *
+   *
+   * Alternative future format below.
+   linksNew: [
+   { "url": "https://gitlab.jinis.online", "content": "Link to Self-Host" },
+   { "url": "https://github.com/jin-park-dev/bodt-cms", "content": "Link to Gitlab" },
+   ],
+   This is alternative way. Don't need this complex at mo.
+   When it's this complex App will need to be aware of what meaning of keys are.
    */
   return Object.keys(links).map((cur) => {
       return <div className="" key={"live" + cur}><a key={"liveLink" + cur} href={links[cur]}>{cur}</a></div>

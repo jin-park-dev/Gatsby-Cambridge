@@ -20,10 +20,6 @@ const portfolioItems = [
       "Link to Self-Host": "https://gitlab.jinis.online",
       "Link to Gitlab": "https://github.com/jin-park-dev/bodt-cms",
     },
-    linksNew: [
-      { "Link": "https://gitlab.jinis.online", "Content": "Link to Self-Host" },
-      { "Link": "https://github.com/jin-park-dev/bodt-cms", "Content": "Link to Gitlab" },
-    ],
     idx: 2,
   },
   {

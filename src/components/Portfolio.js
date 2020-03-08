@@ -8,17 +8,16 @@ function renderFolioLinks(links) {
    *
    *
    * Alternative future format below.
-   linksNew: [
+   links: [
    { "url": "https://gitlab.jinis.online", "content": "Link to Self-Host" },
    { "url": "https://github.com/jin-park-dev/bodt-cms", "content": "Link to Gitlab" },
    ],
    This is alternative way. Don't need this complex at mo.
    When it's this complex App will need to be aware of what meaning of keys are.
    */
-  return Object.keys(links).map((cur) => {
-      return <div className="" key={"live" + cur}><a key={"liveLink" + cur} href={links[cur]}>{cur}</a></div>
-    },
-  )
+  return links.map((curRow, curIndex) => {
+    return <div className="" key={"live" + curIndex}><a key={"liveLink" + curIndex} href={curRow.url}>{curRow.content}</a></div>
+  })
 }
 
 
@@ -39,7 +38,8 @@ const Portfolio = ({ portfolioItem }) => {
         <div key={"pSinop" + idx} className='font-lg sm:w-9/12'>{synopsis}</div>
       </div>
       <div key={"dropdown" + idx}
-           className={`flex flex-row mt-6 ${hidden ? "twirl-section-collapsed" : "twirl-section"}`}>
+           className={`flex flex-row mt-6 ${hidden ? "twirl-section-collapsed" : "twirl-section"}`}
+      >
         <div key={"img" + idx} className="w-4/12 mr-3"><img alt="nicasia" src={img} /></div>
         <div key={"links" + idx} className="flex flex-col w-8/12">
           <div>{desc}</div>

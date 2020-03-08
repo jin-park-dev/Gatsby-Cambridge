@@ -5,10 +5,6 @@ const portfolioItems = [
     desc: `Similar to VMware ESXi. Huge benefit of LXC (same underlying tech as docker) allows lightweight virtualization.
     Most of my services are hosted on Proxmox on LXC.`,
     img: "./portfolio/faduense.png",
-    // links: {
-    //   "Link to Self-Host": "https://prox.jinis.online",
-    //   "Link to Proxmox": "https://www.proxmox.com",
-    // },
     links: [
       { "url": "https://prox.jinis.online", "content": "Link to Self-Host" },
       { "url": "https://www.proxmox.com", "content": "Link to Proxmox" },
@@ -54,7 +50,7 @@ const portfolioItems = [
   {
     title: "Statping",
     synopsis: "Open-source status page for your websites and applications.",
-    desc: "Monitors and reports to slack. Hosted on Proxmox LXC Docker.",
+    desc: "Monitors up/down status of website/API. Sends notification to Slack if there are changes. Hosted on Proxmox LXC Docker.",
     img: "./portfolio/EJS.png",
     links: [
       { "url": "https://statping.jinis.online", "content": "Link to Self-Host" },
@@ -65,13 +61,57 @@ const portfolioItems = [
   {
     title: "OpenMediaVault",
     synopsis: "Network attached storage (NAS) solution based on Debian Linux.",
-    desc: "Mainly used for NAS.",
+    desc: "Mainly used for NAS. Hosted on Proxmox LXC.",
     img: "./portfolio/EJS.png",
     links: [
       { "url": "https://omv.jinis.online/", "content": "Link to Self-Host" },
       { "url": "https://www.openmediavault.org/", "content": "Link to OpenMediaVault" },
     ],
     idx: 6,
+  },
+  {
+    title: "Monica",
+    synopsis: "Personal CRM. Remember everything about your friends, family and business relationships.",
+    desc: "Self-host gives full feature of Monica CRM. Hosted on Proxmox LXC.",
+    img: "./portfolio/EJS.png",
+    links: [
+      { "url": "https://monica.jinis.online/", "content": "Link to Self-Host" },
+      { "url": "https://www.monicahq.com/", "content": "Link to Monica" },
+    ],
+    idx: 7,
+  },
+  {
+    title: "Nextcloud",
+    synopsis: "Dropbox alternative.",
+    desc: "Nextcloud also is used to host my calendar data with open protocol CalDAV. Hosted on a VPS running CentOS. Backed up with Restic on Wasabi (AWS S3 Storage).",
+    img: "./portfolio/EJS.png",
+    links: [
+      { "url": "https://nextcloud.jinis.space/", "content": "Link to Self-Host" },
+      { "url": "https://nextcloud.com/", "content": "Link to Nextcloud" },
+    ],
+    idx: 8,
+  },
+  {
+    title: "Jenkins",
+    synopsis: "Open source automation server. Commonly used for continuous integration (CI), continuous delivery (CD).",
+    desc: "This is where logic for deployment for my apps are kept. Sends notification to Slack/Zulip. Merging into Master/Staging/Develop branch for my projects trigger build to be run. See below link for the full process.",
+    img: "./portfolio/EJS.png",
+    links: [
+      { "url": "https://jenkins.jinis.online/", "content": "Link to Self-Host" },
+      { "url": "https://jenkins.io/", "content": "Link to Jenkins" },
+    ],
+    idx: 9,
+  },
+  {
+    title: "Observium",
+    synopsis: "Open source network monitoring platform.",
+    desc: "Comprehensive monitoring platform giving much more data using SNMP protocol. Shows machine's CPU, Memory, HD info.",
+    img: "./portfolio/EJS.png",
+    links: [
+      { "url": "https://observ.jinis.online/", "content": "Link to Self-Host" },
+      { "url": "https://www.observium.org/", "content": "Link to Observium" },
+    ],
+    idx: 10,
   },
 
 ]

@@ -3,18 +3,6 @@ import "./Portfolio.css"
 
 
 function renderFolioLinks(links) {
-  /**
-   * In format "content text": ""
-   *
-   *
-   * Alternative future format below.
-   links: [
-   { "url": "https://gitlab.jinis.online", "content": "Link to Self-Host" },
-   { "url": "https://github.com/jin-park-dev/bodt-cms", "content": "Link to Gitlab" },
-   ],
-   This is alternative way. Don't need this complex at mo.
-   When it's this complex App will need to be aware of what meaning of keys are.
-   */
   return links.map((curRow, curIndex) => {
     return <div className="" key={"live" + curIndex}><a key={"liveLink" + curIndex} href={curRow.url}>{curRow.content}</a></div>
   })
@@ -42,7 +30,7 @@ const Portfolio = ({ portfolioItem }) => {
       >
         <div key={"img" + idx} className="w-4/12 mr-3"><img alt="nicasia" src={img} /></div>
         <div key={"links" + idx} className="flex flex-col w-8/12">
-          <div>{desc}</div>
+          <div className="mb-2">{desc}</div>
           {renderFolioLinks(links)}
         </div>
       </div>

@@ -1,15 +1,15 @@
 const portfolioItems = [
   {
-    title: 'KanXDoro',
-    synopsis: 'Kanban Board with pomodoro timer. Build with React/Redux, Django REST.',
-    desc: 'Custom Kanban Board with pomodoro timer. React/Redux, React-Beautiful-Dnd, Django REST, Django ORM, SQL.',
+    title: 'Proxmox',
+    synopsis: 'Complete open-source platform for virtualization that tightly integrates KVM hypervisor and LXC containers.',
+    desc: 'Similar to VMware ESXi. Huge benefit of LXC (same underlying tech as docker) allows lightweight virtualization.',
     img: './portfolio/faduense.png',
     live: 'https://www.kanxdoro.com',
     repo: 'https://github.com/jin-park-dev/React-LifeBoard',
     idx: 1
   },
   {
-    title: 'Bachata Cambridge',
+    title: 'Gitlab',
     synopsis: 'Wagtail CMS (Based on Django) for longest running bachata performance group in UK.',
     desc: 'Wagtail CMS (Based on Django) for longest running bachata performance group in UK - Bachata Obsesión Dance Team.',
     img: './portfolio/bitcoin.png',

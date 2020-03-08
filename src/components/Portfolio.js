@@ -6,12 +6,13 @@ const Portfolio = ({portfolioItem}) => {
   const {title, synopsis, idx, desc, repo, live,img} = portfolioItem
 
   return (
-    <div key={"div" + idx} className="flex flex-col mb-5"
-         onClick={() => setHidden(!hidden)}>
+    <div key={"div" + idx} className="flex flex-col mb-5">
       <div key={"label" + idx}
            className="flex flex-col items-center justify-center sm:flex-row
              cursor-pointer
-             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+           onClick={() => setHidden(!hidden)}
+      >
         <div key={"pTit" + idx} className='font-bold text-xl sm:w-3/12'>{title}</div>
         <div key={"dot" + idx} className='font-bold text-xl px-2'>·</div>
         <div key={"pSinop" + idx} className='font-lg sm:w-9/12'>{synopsis}</div>

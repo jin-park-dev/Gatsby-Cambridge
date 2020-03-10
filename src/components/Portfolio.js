@@ -51,6 +51,7 @@ const Portfolio = (props) => {
       >
         <div key={"img" + idx} className="w-4/12 mr-3">
           {/*{console.log(img.split('/').pop())}*/}
+          {/*<Image imgsrc={img.split('/').pop()} />*/}
           <Image imgsrc={img.split('/').pop()} />
         </div>
         <div key={"links" + idx} className="flex flex-col w-8/12">

@@ -9,7 +9,9 @@ echo "ME =======> University of Cambridge, Maths (Live)"
 read -p "Are you sure? (y/n) " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo "===============Building with RavenID============="
+    echo "===============Need to clear cache or img src prefix does not get built properly.============="
+    rm -rf .cache/*
+    echo "===============Building with RavenID as prefix============="
     gatsby build --prefix-paths
     echo "===============RSYNC Uploading============="
     rsync -avz $LOCAL_DEV/public/ ${TARGET}

@@ -1,17 +1,31 @@
 import React, { useState } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import "./Portfolio.css"
 
 
 function renderFolioLinks(links) {
+
   return links.map((curRow, curIndex) => {
+    const data = useStaticQuery(graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "about.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `)
+    console.log(data)
     return <div className="" key={"live" + curIndex}><a key={"liveLink" + curIndex} href={curRow.url}>{curRow.content}</a></div>
   })
 }
 
 
-const Portfolio = ({ portfolioItem }) => {
+const Portfolio = (props) => {
   const [hidden, setHidden] = useState(true)
-  const { title, synopsis, idx, desc, links, img } = portfolioItem
+  const { title, synopsis, idx, desc, links, img } = props.portfolioItem
 
   return (
     <div key={"div" + idx} className="flex flex-col mb-5">

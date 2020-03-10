@@ -2,12 +2,12 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Img from 'gatsby-image';
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import './about.css';
 
 export const query = graphql`
 query {
-    file(relativePath: { eq: "about.jpg" }) {
+    file(relativePath: { eq: "images/about_2.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
@@ -21,20 +21,6 @@ query {
 `
 
 const About = (props) => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     placeholderImage: file(relativePath: { eq: "about.jpg" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 400) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-  console.log(query)
-  console.log(props.data.file)
-  // console.log(data)
   return (
     <Layout>
       <h2>Hello, my name is Jin</h2>
@@ -74,16 +60,14 @@ const About = (props) => {
               {/*  <div>Javascript</div>*/}
               {/*</div>*/}
 
+              <img alt="Python`" className="w-8 mx-4" src="./logos/python2.png" />
+              <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />
               <img alt="javascript" className="w-8 mx-4" src="./logos/javascript.svg" />
               <img alt="Gatsby" className="w-8 mx-4" src="./logos/gatsby.svg" />
               <img alt="GraphQl" className="w-8 mx-4" src="./logos/graphql.svg" />
-              <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />
               <img alt="nodeJs" className="w-8 mx-4" src="./logos/nodejs-icon.svg" />
               <img alt="Mongo" className="w-8 mx-4" src="./logos/mongodb.png" />
               <img alt="Sass" className="w-8 mx-4" src="./logos/sass-1.svg" />
-
-              <img alt="Python`" className="w-8 mx-4" src="./logos/python1.png" />
-              <img alt="Python`" className="w-8 mx-4" src="./logos/python2.png" />
             </div>
           </div>
 

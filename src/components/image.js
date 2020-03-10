@@ -13,20 +13,25 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const Image = (props) => {
   const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          query {
+            allImageSharp {
+              edges {
+                node {
+                  fluid(maxWidth: 1200) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
           }
-        }
-      }
-    }
-  `)
+        `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.allImageSharp.edges.find((element) => {
+    // Match string after final slash
+    return (element.node.fluid.src.split('/').pop() === props.imgsrc);
+  }).node.fluid} />
 }
 
 export default Image

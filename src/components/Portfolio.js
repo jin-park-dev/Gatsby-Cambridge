@@ -1,26 +1,33 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "./Portfolio.css"
+import Image from "./image"
 
 
 function renderFolioLinks(links) {
 
   return links.map((curRow, curIndex) => {
-    const data = useStaticQuery(graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "about.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `)
-    console.log(data)
+    // const data = useStaticQuery(graphql`
+    //   query {
+    //     placeholderImage: file(relativePath: { eq: "selfhost/bitwarden.png" }) {
+    //       childImageSharp {
+    //         fluid(maxWidth: 400) {
+    //           ...GatsbyImageSharpFluid
+    //         }
+    //       }
+    //     }
+    //   }
+    // `)
+    // console.log(data)
     return <div className="" key={"live" + curIndex}><a key={"liveLink" + curIndex} href={curRow.url}>{curRow.content}</a></div>
   })
 }
+
+// function renderFolioImg(img) {
+//   return links.map((curRow, curIndex) => {
+//     return <div className="" key={"live" + curIndex}><a key={"liveLink" + curIndex} href={curRow.url}>{curRow.content}</a></div>
+//   })
+// }
 
 
 const Portfolio = (props) => {
@@ -42,7 +49,10 @@ const Portfolio = (props) => {
       <div key={"dropdown" + idx}
            className={`flex flex-row mt-6 ${hidden ? "twirl-section-collapsed" : "twirl-section"}`}
       >
-        <div key={"img" + idx} className="w-4/12 mr-3"><img alt="nicasia" src={img} /></div>
+        <div key={"img" + idx} className="w-4/12 mr-3">
+          {/*{console.log(img.split('/').pop())}*/}
+          <Image imgsrc={img.split('/').pop()} />
+        </div>
         <div key={"links" + idx} className="flex flex-col w-8/12">
           <div className="mb-2">{desc}</div>
           {renderFolioLinks(links)}

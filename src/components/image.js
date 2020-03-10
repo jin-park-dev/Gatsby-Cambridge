@@ -15,6 +15,7 @@ import Img from "gatsby-image"
 
 
 // Use solution from https://github.com/gatsbyjs/gatsby/issues/2293 as string interpolation is not allowed.
+// by "ewagstaff". Coverted staticQuery to userStaticQuery (hook version)
 const Image = (props) => {
   const data = useStaticQuery(graphql`
           query {

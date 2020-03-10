@@ -13,6 +13,8 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+
+// Use solution from https://github.com/gatsbyjs/gatsby/issues/2293 as string interpolation is not allowed.
 const Image = (props) => {
   const data = useStaticQuery(graphql`
           query {

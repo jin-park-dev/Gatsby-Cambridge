@@ -43,6 +43,10 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "deploy_surge": "gatsby clean && gatsby build && npm run transfer_surge",
+    "deploy_cam": "gatsby clean && gatsby build --prefix-paths && npm run transfer_cam ",
+    "transfer_surge": "surge public/ --domain jin-dev.surge.sh",
+    "transfer_cam": "rsync -avz /Users/jinpark/Personal/gatsby-tailwind-cv/public/ cam-maths:~/public_html",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {

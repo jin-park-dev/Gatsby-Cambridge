@@ -59,14 +59,16 @@ const About = (props) => {
               {/*  <div>Javascript</div>*/}
               {/*</div>*/}
 
-              <img alt="Python`" className="w-8 mx-4" src="/logos/python2.png" />
-              <img alt="React" className="w-8 mx-4" src="/logos/react.svg" />
-              <img alt="javascript" className="w-8 mx-4" src="/logos/javascript.svg" />
-              <img alt="Gatsby" className="w-8 mx-4" src="/logos/gatsby.svg" />
-              <img alt="GraphQl" className="w-8 mx-4" src="/logos/graphql.svg" />
-              <img alt="nodeJs" className="w-8 mx-4" src="/logos/nodejs-icon.svg" />
-              <img alt="Mongo" className="w-8 mx-4" src="/logos/mongodb.png" />
-              <img alt="Sass" className="w-8 mx-4" src="/logos/sass-1.svg" />
+              <img alt="Python" className="w-8 mx-4" src="/logos/python2.png" />
+              <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />
+              <img alt="Javascript" className="w-8 mx-4" src="static/logos/javascript.svg" />
+              <img alt="Clojure" className="w-8 mx-4" src="/static/logos/clojure.svg" />
+              <img alt="Clojurescript" className="w-8 mx-4" src="/~jp835/logos/cljs.svg" />
+              <img alt="Gatsby" className="w-8 mx-4" src="~jp835/logos/gatsby.svg" />
+              <img alt="GraphQl" className="w-8 mx-4" src="./~jp835/logos/graphql.svg" />
+              <img alt="nodeJs" className="w-8 mx-4" src="logos/nodejs-icon.svg" />
+              <img alt="Mongo" className="w-8 mx-4" src="logos/mongodb.png" />
+              <img alt="Sass" className="w-8 mx-4" src="logos/sass-1.svg" />
             </div>
           </div>
 

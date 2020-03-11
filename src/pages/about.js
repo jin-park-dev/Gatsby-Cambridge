@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby'
 import './about.css';
+import reactImg from '../../static/logos/react.svg'
 
 export const query = graphql`
 query {
@@ -62,6 +63,7 @@ const About = (props) => {
 
               <img alt="Python`" className="w-8 mx-4" src="./logos/python2.png" />
               <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />
+              <img alt="React" className="w-8 mx-4" src={reactImg} />
               <img alt="javascript" className="w-8 mx-4" src="./logos/javascript.svg" />
               <img alt="Gatsby" className="w-8 mx-4" src="./logos/gatsby.svg" />
               <img alt="GraphQl" className="w-8 mx-4" src="./logos/graphql.svg" />

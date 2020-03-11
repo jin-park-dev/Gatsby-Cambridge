@@ -28,7 +28,6 @@ const About = (props) => {
       <div className="flex flex-col sm:flex-row text-sm items-center sm:items-start">
         <div className="w-12/12 sm:w-4/12">
           <div className="p-5"> <Img className="rounded-full" fluid={props.data.file.childImageSharp.fluid} /></div>
-          {/*<div className={"imagen"}> <Img fluid={data.placeholderImage.childImageSharp.fluid} /></div>*/}
           <div className="flex flex-col">
             <div className="flex flex-row items-center"><i className="fas fa-map-marker-alt fa-sm w-1/12 lg:w-1/12"></i><div className="w-11/12 lg:w-11/12">Cambridge, United Kingdom</div></div>
             <div className="flex flex-row items-center"><i className="fas fa-graduation-cap fa-sm w-1/12 lg:w-1/12"></i><div className="w-11/12 lg:w-11/12">University of life</div></div>
@@ -60,14 +59,14 @@ const About = (props) => {
               {/*  <div>Javascript</div>*/}
               {/*</div>*/}
 
-              <img alt="Python`" className="w-8 mx-4" src="./logos/python2.png" />
-              <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />
-              <img alt="javascript" className="w-8 mx-4" src="./logos/javascript.svg" />
-              <img alt="Gatsby" className="w-8 mx-4" src="./logos/gatsby.svg" />
-              <img alt="GraphQl" className="w-8 mx-4" src="./logos/graphql.svg" />
-              <img alt="nodeJs" className="w-8 mx-4" src="./logos/nodejs-icon.svg" />
-              <img alt="Mongo" className="w-8 mx-4" src="./logos/mongodb.png" />
-              <img alt="Sass" className="w-8 mx-4" src="./logos/sass-1.svg" />
+              <img alt="Python`" className="w-8 mx-4" src="/logos/python2.png" />
+              <img alt="React" className="w-8 mx-4" src="/logos/react.svg" />
+              <img alt="javascript" className="w-8 mx-4" src="/logos/javascript.svg" />
+              <img alt="Gatsby" className="w-8 mx-4" src="/logos/gatsby.svg" />
+              <img alt="GraphQl" className="w-8 mx-4" src="/logos/graphql.svg" />
+              <img alt="nodeJs" className="w-8 mx-4" src="/logos/nodejs-icon.svg" />
+              <img alt="Mongo" className="w-8 mx-4" src="/logos/mongodb.png" />
+              <img alt="Sass" className="w-8 mx-4" src="/logos/sass-1.svg" />
             </div>
           </div>
 

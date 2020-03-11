@@ -42,6 +42,11 @@
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
+## Notes
+
+Need to clean due to /prefix-path, that does not get regenerated. GraphQL generate images are using wrong path for Cambridge personal page (/~jp835) VS surge. (/)
+https://github.com/gatsbyjs/gatsby/issues/2440
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.

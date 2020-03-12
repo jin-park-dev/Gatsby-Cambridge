@@ -4,7 +4,18 @@ import SEO from "../components/seo"
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby'
 import './about.css';
+
+import cljsImg from '../../static/logos/cljs.svg'
+import clojureImg from '../../static/logos/clojure.svg'
+import gatsbyImg from '../../static/logos/gatsby.svg'
+import graphqlImg from '../../static/logos/graphql.svg'
+import javascriptImg from '../../static/logos/javascript.svg'
+import mongodbImg from '../../static/logos/mongodb.png'
+import nodejsImg from '../../static/logos/nodejs-icon.svg'
+import pythonImg from '../../static/logos/python2.png'
 import reactImg from '../../static/logos/react.svg'
+import sassImg from '../../static/logos/sass-1.svg'
+
 
 export const query = graphql`
 query {
@@ -60,15 +71,14 @@ const About = (props) => {
               {/*  <div>Javascript</div>*/}
               {/*</div>*/}
 
-              <img alt="Python" className="w-8 mx-4" src="/logos/python2.png" />
-              <img alt="React" className="w-8 mx-4" src="./logos/react.svg" />
+              <img alt="Python" className="w-8 mx-4" src={pythonImg} />
               <img alt="React" className="w-8 mx-4" src={reactImg} />
-              <img alt="javascript" className="w-8 mx-4" src="./logos/javascript.svg" />
-              <img alt="Gatsby" className="w-8 mx-4" src="./logos/gatsby.svg" />
-              <img alt="GraphQl" className="w-8 mx-4" src="./logos/graphql.svg" />
-              <img alt="nodeJs" className="w-8 mx-4" src="./logos/nodejs-icon.svg" />
-              <img alt="Mongo" className="w-8 mx-4" src="./logos/mongodb.png" />
-              <img alt="Sass" className="w-8 mx-4" src="./logos/sass-1.svg" />
+              <img alt="javascript" className="w-8 mx-4" src={javascriptImg} />
+              <img alt="Gatsby" className="w-8 mx-4" src={gatsbyImg} />
+              <img alt="GraphQl" className="w-8 mx-4" src={graphqlImg} />
+              <img alt="nodeJs" className="w-8 mx-4" src={nodejsImg} />
+              <img alt="Mongo" className="w-8 mx-4" src={mongodbImg} />
+              <img alt="Sass" className="w-8 mx-4" src={sassImg} />
             </div>
           </div>
 

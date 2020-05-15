@@ -52,6 +52,7 @@ const About = (props) => {
           <p>
             Technology enthusiast.
           </p>
+          <div>Genuinely Curious of systems. Technology enthusiast. Constantly improving. Like to keep up with tech. </div>
           <p>
             Stomps it stale send it loc vertical backside hack out the back rookie drifting the tail crumbly lip. Oil barny nutty Jordy Smith clamped ripping the pit, best section combos wind swell best section. Chunky keyhole shutting down ripping bumps crumble sand bottom. Jamie O'Brien psyched pit critical Margaret River good-epic Pipe, good-epic flow. Firing shorebreak stuffs the rail claw hands rail dig speed tube barn dog a-frame claim. Firing wave so pitted wave green room green room foam climb tides insider. Rights cranking nice little amped barn dog bumps hack a thon don.
           </p>

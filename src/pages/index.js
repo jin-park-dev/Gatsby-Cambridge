@@ -28,6 +28,9 @@ const IndexPage = () => (
     {/*  <Image />*/}
     {/*</div>*/}
     {renderFolio()}
+    <div>
+      Please see [[Link to CV]] for compresensive history.
+    </div>
   </Layout>
 )
 

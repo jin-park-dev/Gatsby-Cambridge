@@ -50,14 +50,41 @@ const About = (props) => {
         </div>
         <div className="w-12/12 lg:w-8/12">
           <p>
-            Technology enthusiast.
-          </p>
-          <div>Genuinely Curious of systems. Technology enthusiast. Constantly improving. Like to keep up with tech. </div>
-          <p>
-            Stomps it stale send it loc vertical backside hack out the back rookie drifting the tail crumbly lip. Oil barny nutty Jordy Smith clamped ripping the pit, best section combos wind swell best section. Chunky keyhole shutting down ripping bumps crumble sand bottom. Jamie O'Brien psyched pit critical Margaret River good-epic Pipe, good-epic flow. Firing shorebreak stuffs the rail claw hands rail dig speed tube barn dog a-frame claim. Firing wave so pitted wave green room green room foam climb tides insider. Rights cranking nice little amped barn dog bumps hack a thon don.
+            Technology enthusiast. I enjoy learning about technology, and constantly improving my skill sets.
           </p>
           <p>
-            Fog Eddie would go layback daggers barreling backside board lefts. Pitted silky smooth John John Florence reef brah, pump. Rippin blow tail fins free reef ripping knee high full mad air reverse? Paddle out Simpo psyching tri fin, down the line, no kooks speed hack waves. Pump send it sand bottom section Jordy Smith insider no kooks, over the reef epic snake.
+            My core skillset is building web applications from start to finish throughout development lifecycle. Commoned referred as a Full-Stack developer
+          </p>
+          <p>
+            I also have general competency in DevOP area. Cloud services, virtual machines, CI, docker, ansible, bash, zsh.
+            Toolsets to facilate in developmentment, deployment and maintenance of a software.
+          </p>
+          <p>
+            (Brush this part up) I like people, get along with people well. Also know when I need to say no
+          </p>
+          <p>
+            (Brush this part up) I focus on balancing delivering best value to business whilst keeping high standard of software development.
+            Ofc this must be judge case by case and correct balance must be applied.
+          </p>
+          <p>
+            Key strength is ability to keep learning, and curioty of technology.
+          </p>
+          <p>
+            Personal development setup, [[Link here]]
+          </p>
+          <p>
+            HomeLab (network, selfhost) [[Link here]]
+          </p>
+          <p>
+            My belief is in modern fast moving tech space, learn as required.
+          </p>
+          <p>
+            Usually spend free time learning or practising my craft
+          </p>
+          <p>
+            In my spare time I am into dancing. Teaching, performing, social.
+            Gives break to anayltical side of brain.
+            Being in the moment, and I am rested.
           </p>
 
           <div className="flex flex-col items-center">

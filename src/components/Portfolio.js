@@ -19,7 +19,7 @@ function renderFolioLinks(links) {
     //   }
     // `)
     // console.log(data)
-    return <div className="" key={"live" + curIndex}><a key={"liveLink" + curIndex} href={curRow.url}>{curRow.content}</a></div>
+    return <div className="no-underline hover:underline text-blue-500" key={"live" + curIndex}><a key={"liveLink" + curIndex} href={curRow.url}>{curRow.content}</a></div>
   })
 }
 

@@ -34,103 +34,97 @@ export const query = graphql`
 const About = (props) => {
   return (
     <Layout>
-      <h1>Hello, my name is Jin</h1>
+      <h1 className="mb-0 sm:mb-6">Hello, my name is Jin</h1>
 
       <div className="flex flex-col sm:flex-row text-sm items-center sm:items-start">
         <div className="w-12/12 sm:w-4/12">
-          <div className="p-5 sm:p-1 md:p-2 lg:p-5">
-            {" "}
+          <div className="p-1 sm:p-2 md:p-2 lg:p-5">
             <Img
               className="rounded-full"
               fluid={props.data.file.childImageSharp.fluid}
             />
           </div>
-          <div className="flex flex-col">
-            <div className="flex flex-row items-center">
-              <i className="fas fa-map-marker-alt fa-sm w-1/12 lg:w-1/12"></i>
+          <div className="flex flex-col pr-0 sm:pr-2 mt-5 sm:mt-0">
+            <div className="flex flex-row items-center mb-2">
+              <i className="fas fa-map-marker-alt fa-sm w-1/12 lg:w-1/12 text-center mr-1"></i>
               <div className="w-11/12 lg:w-11/12">
                 Cambridge, United Kingdom
               </div>
             </div>
-            <div className="flex flex-row items-center">
-              <i className="fas fa-graduation-cap fa-sm w-1/12 lg:w-1/12"></i>
+            {/* <div className="flex flex-row items-center">
+              <i className="fas fa-graduation-cap fa-sm w-1/12 lg:w-1/12 text-center mr-1"></i>
               <div className="w-11/12 lg:w-11/12">University of life</div>
-            </div>
-            <div className="flex flex-row items-center">
-              <i className="fas fa-code fa-sm w-1/12 lg:w-1/12"></i>
+            </div> */}
+            <div className="flex flex-row items-center mb-2">
+              <i className="fas fa-code fa-sm w-1/12 lg:w-1/12 text-center mr-1"></i>
               <div className="w-11/12 lg:w-11/12">
-                HTML, JS, CSS, SQL, PYTHON, CLOJURE
+                Python, JS, Clojure, Html, CSS, SQL
               </div>
             </div>
             <div className="flex flex-row items-center">
-              <i className="fas fa-language fa-sm w-1/12 lg:w-1/12"></i>
+              <i className="fas fa-language fa-sm w-1/12 lg:w-1/12 text-center mr-1"></i>
               <div className="w-11/12 lg:w-11/12">English, Korean</div>
             </div>
           </div>
         </div>
-        <div className="w-12/12 lg:w-8/12">
-          <p>
-            Technology enthusiast. Since young age I been interested in impact
-            technology had on our lives.
-          </p>
-          <p>
-            Software developer is a craft and it requires continuously honing
-            the craft. In modern world of fast moving tech space it is important
-            to continuously learn and adapt as required.
-          </p>
-          <p>
-            My core skillset is building web applications from start to finish
-            throughout development lifecycle. Commonly referred as a Full-Stack
-            developer.
-          </p>
-          <p>
-            I also have general competency in DevOPs area. Cloud services such
-            as Digital Ocean, GCP, Proxmox, virtual machines, CI, docker,
-            ansible, bash, zsh. Toolsets to facilitate in development,
-            deployment and maintenance of a software.
-          </p>
-          <p>
-            I focus on balancing delivering best value to business whilst
-            keeping high standard of software development. This must be decided
-            on case by case and correct balance must be applied for the
-            situation.
-          </p>
-          <p>
-            In my spare time I enjoy exploring new technology and practising my
-            craft.
-          </p>
-          <p>
-            I am also a dancer. I teach, perform and socially dance. Being in the moment, going along with whatever happens gives break to my analytical side of brain.
-          </p>
+        
+        <div className="w-12/12 sm:w-8/12 text-justify sm:text-justify px-1">
+          <hr className="my-5 sm:hidden"/> {/* Mobile only */}
+          <div>
+            <p>
+              Technology enthusiast. Since young age I been interested in impact
+              technology had on our lives.
+            </p>
+            <p>
+              My core skillset is building web applications from start to finish
+              throughout development lifecycle. Commonly referred as a Full-Stack
+              developer.
+            </p>
+            <p>
+              I also have general competency in DevOPs area. Cloud services such
+              as Digital Ocean, GCP, Proxmox, virtual machines, CI, docker,
+              ansible, bash, zsh. Toolsets to facilitate in development,
+              deployment and maintenance of a software.
+            </p>
+            <p>
+              I focus on balancing delivering best value to business whilst
+              keeping high standard of software development. This must be decided
+              on case by case and correct balance must be applied for the
+              situation.
+            </p>
+            <p>
+              Software developer is a craft and requires continuously honing
+              the craft. In modern world of fast moving tech space it is important
+              to continuously learn and adapt as required.
+            </p>
+            <p>
+              In my spare time I enjoy exploring new technology and practising my
+              craft.
+            </p>
+            <p className="mb-0">
+              I am also a dancer. I teach, perform and socially dance. Being in the moment, going along with whatever happens gives break to my analytical side of brain.
+            </p>
+          </div>
 
-          <div className="flex flex-col items-center">
-            <div>
-              <p>Some of the tech I like:</p>
-            </div>
-            {/*w-8 md:w-2/12 lg:w-8*/}
-            <div className="flex flex-row flex-wrap justify-center">
-              {/*<div className="flex flex-col justify-center items-center">*/}
-              {/*  <div className="flex flex-row justify-center items-center"><img alt="javascript" className="w-8" src="./logos/javascript.svg" /></div>*/}
-              {/*  <div>Javascript</div>*/}
-              {/*</div>*/}
-
+          <div className="flex flex-col items-center mt-5">
+            <p>
+              Some of the tech I like:
+            </p>
+            <div className="flex flex-row flex-wrap justify-center mt-2 sm:mt-0">
               <img alt="Python" className="w-8 mx-4" src={pythonImg} />
               <img alt="React" className="w-8 mx-4" src={reactImg} />
               <img alt="javascript" className="w-8 mx-4" src={javascriptImg} />
               <img alt="Gatsby" className="w-8 mx-4" src={gatsbyImg} />
               <img alt="GraphQl" className="w-8 mx-4" src={graphqlImg} />
-              {/* <img alt="nodeJs" className="w-8 mx-4" src={nodejsImg} /> */}
-              {/* <img alt="Mongo" className="w-8 mx-4" src={mongodbImg} /> */}
-              {/* <img alt="Sass" className="w-8 mx-4" src={sassImg} /> */}
             </div>
           </div>
 
-          <div className="flex flex-row">
+          <div className="flex flex-row justify-center">
             <div className="mr-3">Send me a message!</div>
             <a className="mr-2" href="https://github.com/jin-park-dev">
               <i className="fab fa-github"></i>
             </a>
-            <a className="mr-2" href="www.linkedin.com/in/jin-park-dev">
+            <a className="mr-2" href="https://www.linkedin.com/in/jin-park-dev">
               <i className="fab fa-linkedin"></i>
             </a>
             <a

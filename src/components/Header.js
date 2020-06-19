@@ -31,10 +31,7 @@ const Header = () => {
         <div className="mb-6 text-xl">
           <a className="mx-2" href='https://github.com/jin-park-dev'><i className="fab fa-github"></i></a>
           <a className="mx-2" href='https://gitlab.jinis.online/jin'><i className="fab fa-gitlab"></i></a>
-          {/*<a href='https://twitter.com/codigoMate'><i className="fab fa-twitter"></i></a>*/}
-          {/*<a href='https://github.com/jin-park-dev'><i className="fab fa-dev"></i></a>*/}
-          <a className="mx-2" href='www.linkedin.com/in/jin-park-dev'><i className="fab fa-linkedin"></i></a>
-          {/*<a href='https://youtube.com/codigoMate'><i className="fab fa-youtube"></i></a>*/}
+          <a className="mx-2" href='https://www.linkedin.com/in/jin-park-dev'><i className="fab fa-linkedin"></i></a>
         </div>
         <div className="mb-6">
           <Link className="mx-3" to="/">Portfolio</Link>

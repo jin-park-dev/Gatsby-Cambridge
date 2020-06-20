@@ -10,7 +10,7 @@ p {
 
 @screen sm {
   p {
-    @apply mb-6;
+    @apply mb-4;
   }
 }
 

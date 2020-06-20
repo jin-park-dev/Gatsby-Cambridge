@@ -5,16 +5,20 @@ import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import "./about.css"
 
-import cljsImg from "../../static/logos/cljs.svg"
+// import pythonVerticalImg from "../../static/logos/python-4.svg"
+// import pythonLogoImg from "../../static/logos/python-icon.svg"
+// import pythonImg from "../../static/logos/python2.png"
+// import graphqlImg from "../../static/logos/graphql.svg"
+// import mongodbImg from "../../static/logos/mongodb.png"
+// import nodejsImg from "../../static/logos/nodejs-icon.svg"
+// import sassImg from "../../static/logos/sass-1.svg"
+
+import cljsWhiteImg from "../../static/logos/cljs-white.svg"
 import clojureImg from "../../static/logos/clojure.svg"
+import pythonVertical2Img from "../../static/logos/python-vertical.svg"
 import gatsbyImg from "../../static/logos/gatsby.svg"
-import graphqlImg from "../../static/logos/graphql.svg"
 import javascriptImg from "../../static/logos/javascript.svg"
-import mongodbImg from "../../static/logos/mongodb.png"
-import nodejsImg from "../../static/logos/nodejs-icon.svg"
-import pythonImg from "../../static/logos/python2.png"
 import reactImg from "../../static/logos/react.svg"
-import sassImg from "../../static/logos/sass-1.svg"
 
 export const query = graphql`
   query {
@@ -34,7 +38,7 @@ export const query = graphql`
 const About = (props) => {
   return (
     <Layout>
-      <h1 className="mb-0 sm:mb-6">Hello, my name is Jin</h1>
+      <h1 className="text-center sm:text-left mb-3 sm:mb-6">Hello, my name is Jin</h1>
 
       <div className="flex flex-col sm:flex-row text-sm items-center sm:items-start">
         <div className="w-12/12 sm:w-4/12">
@@ -110,12 +114,14 @@ const About = (props) => {
             <p>
               Some of the tech I like:
             </p>
+            {/* self-center fixes safari bug */}
             <div className="flex flex-row flex-wrap justify-center mt-2 sm:mt-0">
-              <img alt="Python" className="w-8 mx-4" src={pythonImg} />
-              <img alt="React" className="w-8 mx-4" src={reactImg} />
-              <img alt="javascript" className="w-8 mx-4" src={javascriptImg} />
-              <img alt="Gatsby" className="w-8 mx-4" src={gatsbyImg} />
-              <img alt="GraphQl" className="w-8 mx-4" src={graphqlImg} />
+              <img alt="Python" className="w-8 mx-4 self-center" src={pythonVertical2Img} />
+              <img alt="Javascript" className="w-8 mx-4 self-center" src={javascriptImg} />
+              <img alt="Clojure" className="w-8 mx-4 self-center" src={clojureImg} />
+              <img alt="ClojureScript" className="w-8 mx-4 self-center" src={cljsWhiteImg} />
+              <img alt="React" className="w-8 mx-4 self-center" src={reactImg} />
+              <img alt="Gatsby" className="w-8 mx-4 self-center" src={gatsbyImg} />
             </div>
           </div>
 

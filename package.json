@@ -39,14 +39,15 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "deploy:surge && deploy:cam",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run clean && npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy_surge": "gatsby clean && gatsby build && npm run transfer_surge",
-    "deploy_cam": "gatsby clean && gatsby build --prefix-paths && npm run transfer_cam ",
-    "transfer_surge": "surge public/ --domain jin-dev.surge.sh",
-    "transfer_cam": "rsync -avz /Users/jinpark/Personal/gatsby-tailwind-cv/public/ cam-maths:~/public_html",
+    "deploy:surge": "gatsby clean && gatsby build && npm run transfer:surge",
+    "deploy:cam": "gatsby clean && gatsby build --prefix-paths && npm run transfer:cam ",
+    "transfer:surge": "surge public/ --domain jin-dev.surge.sh",
+    "transfer:cam": "rsync -avz public/ cam-maths:~/public_html",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {

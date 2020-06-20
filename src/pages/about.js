@@ -5,14 +5,6 @@ import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import "./about.css"
 
-// import pythonVerticalImg from "../../static/logos/python-4.svg"
-// import pythonLogoImg from "../../static/logos/python-icon.svg"
-// import pythonImg from "../../static/logos/python2.png"
-// import graphqlImg from "../../static/logos/graphql.svg"
-// import mongodbImg from "../../static/logos/mongodb.png"
-// import nodejsImg from "../../static/logos/nodejs-icon.svg"
-// import sassImg from "../../static/logos/sass-1.svg"
-
 import cljsWhiteImg from "../../static/logos/cljs-white.svg"
 import clojureImg from "../../static/logos/clojure.svg"
 import pythonVertical2Img from "../../static/logos/python-vertical.svg"
@@ -20,7 +12,7 @@ import gatsbyImg from "../../static/logos/gatsby.svg"
 import javascriptImg from "../../static/logos/javascript.svg"
 import reactImg from "../../static/logos/react.svg"
 import tailwindcssImg from "../../static/logos/tailwindcss.png"
-import djangoImg from "../../static/logos/django.jpg"
+import djangoImg from "../../static/logos/django2.png"
 import wagtailImg from "../../static/logos/wagtail.jpg"
 
 export const query = graphql`

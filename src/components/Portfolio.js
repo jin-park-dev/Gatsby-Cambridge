@@ -35,7 +35,7 @@ const Portfolio = (props) => {
   const { title, synopsis, idx, desc, links, img } = props.portfolioItem
 
   return (
-    <div key={"div" + idx} className="flex flex-col mb-5">
+    <div key={"div" + idx} className="flex flex-col mb-10">
       <div key={"label" + idx}
            className="flex flex-col items-center justify-center sm:flex-row
              cursor-pointer

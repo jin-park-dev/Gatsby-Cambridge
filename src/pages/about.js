@@ -81,7 +81,7 @@ const About = (props) => {
               developer.
             </p>
             <p>
-              I also have general competency in DevOPs area. Cloud services such
+              General competency in DevOPs area. Cloud services such
               as Digital Ocean, GCP, Proxmox, virtual machines, CI, docker,
               ansible, bash, zsh. Toolsets to facilitate in development,
               deployment and maintenance of a software.

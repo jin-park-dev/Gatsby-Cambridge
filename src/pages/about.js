@@ -19,6 +19,9 @@ import pythonVertical2Img from "../../static/logos/python-vertical.svg"
 import gatsbyImg from "../../static/logos/gatsby.svg"
 import javascriptImg from "../../static/logos/javascript.svg"
 import reactImg from "../../static/logos/react.svg"
+import tailwindcssImg from "../../static/logos/tailwindcss.png"
+import djangoImg from "../../static/logos/django.jpg"
+import wagtailImg from "../../static/logos/wagtail.jpg"
 
 export const query = graphql`
   query {
@@ -121,6 +124,9 @@ const About = (props) => {
               <img alt="Clojure" className="w-8 mx-4 self-center" src={clojureImg} />
               <img alt="ClojureScript" className="w-8 mx-4 self-center" src={cljsWhiteImg} />
               <img alt="React" className="w-8 mx-4 self-center" src={reactImg} />
+              <img alt="Django" className="w-8 mx-4 self-center" src={djangoImg} />
+              <img alt="Wagtail-CMS" className="w-8 mx-4 self-center" src={wagtailImg} />
+              <img alt="TailwindCss" className="w-8 mx-4 self-center" src={tailwindcssImg} />
               <img alt="Gatsby" className="w-8 mx-4 self-center" src={gatsbyImg} />
             </div>
           </div>

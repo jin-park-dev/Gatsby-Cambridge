@@ -39,7 +39,7 @@ const Portfolio = (props) => {
       <button key={"label" + idx}
            className="flex flex-col items-center justify-center sm:flex-row
              cursor-pointer text-left
-             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 sm:hover:scale-110"
            onClick={() => setHidden(!hidden)}
            role="button"
            tabIndex={idx}

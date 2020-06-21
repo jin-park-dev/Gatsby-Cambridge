@@ -4,8 +4,8 @@ module.exports = {
   pathPrefix: `/~jp835`,
   siteMetadata: {
     title: `Jin Park`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Jin Park's "jin-park-dev" website built with gatsby.`,
+    author: `Jin Park`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

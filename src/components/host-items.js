@@ -17,7 +17,7 @@ const portfolioItems = [
     desc: "Gitlab is feature rich allowing CI/CD. Gitea is a lightweight alternative. Running on Proxmox LXC.",
     img: "./selfhost/gitlab.png",
     links: [
-      { "url": "https://github.com/jin-park-dev", "content": "Link to Self-Host" },
+      { "url": "https://gitlab.jinis.online/jin", "content": "Link to Self-Host" },
       { "url": "https://about.gitlab.com/", "content": "Link to Gitlab" },
     ],
     idx: 2,

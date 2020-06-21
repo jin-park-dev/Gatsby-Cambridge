@@ -32,9 +32,7 @@ export const query = graphql`
 const About = (props) => {
   return (
     <Layout>
-      <h1 className="mb-3 sm:mb-6">
-        Hello, my name is Jin
-      </h1>
+      <h1 className="mb-3 sm:mb-6">Hello, my name is Jin</h1>
 
       <div className="flex flex-col sm:flex-row text-sm items-center sm:items-start">
         <div className="w-12/12 sm:w-4/12">
@@ -72,38 +70,37 @@ const About = (props) => {
           <hr className="my-5 sm:hidden" /> {/* Mobile only */}
           <div>
             <p>
-              Technology enthusiast. Since young age I been interested in
-              impact, technologies have on our lives.
+              I am a technology enthusiast. Since a young age I have been
+              interested in the impact of technology on our lives.
             </p>
             <p>
-              My core skillset is building web applications from start to finish
-              throughout development lifecycle. Commonly referred as a
-              Full-Stack developer.
+              My core skill set is building web applications from start to
+              finish throughout the development lifecycle; commonly referred to
+              as Full-Stack developer.
             </p>
             <p>
-              General competency in DevOPs area. Cloud services such as Digital
-              Ocean, GCP, Proxmox, virtual machines, CI, docker, ansible, bash,
-              zsh. Toolsets to facilitate in development, deployment and
-              maintenance of a software.
+              My general competencies within the DevOPs area include: cloud
+              services such as Digital Ocean, GCP, Proxmox, virtual machines,
+              CI, docker, ansible, bash, zsh. The tool sets that facilitate the
+              development, deployment and maintenance of a software.
             </p>
             <p>
-              I focus on balancing delivering best value to business whilst
-              keeping high standard of software development. On case by case and
-              correct balance must be applied for the situation.
+              I don’t prescribe to cookie cutter service and consider the
+              requirements of each project on a case by case basis, to strike
+              the correct balance between delivering value to the client whilst
+              maintaining a high standard of software development.
             </p>
             <p>
-              Software developer is a craft and requiring continuously honing
-              the craft. In modern world of fast moving tech space it is
-              important to continuously learn and adapt as required.
-            </p>
-            <p>
-              In my spare time I enjoy exploring new technology and practising
-              my craft.
+              I believe that software development is a craft and much like other
+              crafts, it requires continuous honing. This is why I enjoy
+              exploring new technology and continuing to learn. This approach
+              allows me to provide each software development project with
+              technology that preempts the fast moving tech space.
             </p>
             <p className="mb-0">
-              I am also a dancer. I teach, perform and socially dance. Being in
-              the moment, going along with whatever happens gives break to my
-              analytical side of brain.
+              I am also a dancer. I teach, perform and dance socially. Dancing
+              allows me to think in the moment and provides a creative balance
+              to the analytical side of my brain.
             </p>
           </div>
           <div className="flex flex-col items-center mt-5">

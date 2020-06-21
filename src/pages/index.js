@@ -24,7 +24,7 @@ const IndexPage = () => (
     {/*  <Image />*/}
     {/*</div>*/}
     {renderFolio()}
-    <div className="text-blue-500">
+    <div className="text-blue-500 text-center">
       <a href="https://1drv.ms/w/s!AgNPDSf2wBb5prZrO9_sbCuoXln5Uw">
         See CV additional professional history
       </a>

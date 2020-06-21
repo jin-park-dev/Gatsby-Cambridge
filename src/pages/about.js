@@ -32,7 +32,7 @@ export const query = graphql`
 const About = (props) => {
   return (
     <Layout>
-      <h1 className="text-center sm:text-left mb-3 sm:mb-6">
+      <h1 className="mb-3 sm:mb-6">
         Hello, my name is Jin
       </h1>
 

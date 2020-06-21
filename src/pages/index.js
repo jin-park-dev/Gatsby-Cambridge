@@ -2,14 +2,13 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import portfolioItems from '../components/portfolio-items';
+import portfolioItems from "../components/portfolio-items"
 
-import './index.css';
+import "./index.css"
 import Portfolio from "../components/Portfolio"
 
-
 function renderFolio() {
-  return  portfolioItems.map((portfolioItem) => {
+  return portfolioItems.map((portfolioItem) => {
     return (
       <Portfolio key={`k${portfolioItem.idx}`} portfolioItem={portfolioItem} />
     )
@@ -25,9 +24,10 @@ const IndexPage = () => (
     {/*  <Image />*/}
     {/*</div>*/}
     {renderFolio()}
-    <div className="text-blue-500 text-center">
+    <div className="text-blue-500">
       <a href="https://1drv.ms/w/s!AgNPDSf2wBb5prZrO9_sbCuoXln5Uw">
-      See CV additional professional history</a>
+        See CV additional professional history
+      </a>
     </div>
   </Layout>
 )

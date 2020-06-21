@@ -41,7 +41,6 @@ const Portfolio = (props) => {
              cursor-pointer text-left
              transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 sm:hover:scale-110"
            onClick={() => setHidden(!hidden)}
-           role="button"
            tabIndex={idx}
       >
         <div key={"pTit" + idx} className='font-bold text-xl sm:w-3/12'>{title}</div>

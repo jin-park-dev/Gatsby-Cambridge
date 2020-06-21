@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import "./Portfolio.css"
 import Image from "./image"
 
@@ -36,16 +36,18 @@ const Portfolio = (props) => {
 
   return (
     <div key={"div" + idx} className="flex flex-col mb-10">
-      <div key={"label" + idx}
+      <button key={"label" + idx}
            className="flex flex-col items-center justify-center sm:flex-row
-             cursor-pointer
+             cursor-pointer text-left
              transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
            onClick={() => setHidden(!hidden)}
+           role="button"
+           tabIndex={idx}
       >
         <div key={"pTit" + idx} className='font-bold text-xl sm:w-3/12'>{title}</div>
         <div key={"dot" + idx} className='font-bold text-xl px-2'>·</div>
         <div key={"pSinop" + idx} className='font-lg sm:w-9/12'>{synopsis}</div>
-      </div>
+      </button>
       <div key={"dropdown" + idx}
            className={`flex flex-row mt-6 ${hidden ? "twirl-section-collapsed" : "twirl-section"}`}
       >

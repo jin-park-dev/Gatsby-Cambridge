@@ -9,6 +9,12 @@
 </h1>
 
 
+## 😍 See the live deployed sites here!
+
+
+-   =====> [Homepage on Uni of Cam - DPMMS](https://www.dpmms.cam.ac.uk/person/jp835) <=====
+-   =====> [Homepage on Surge](https://jin-dev.surge.sh/) <=====
+
 ## 🚀 Useful commands
 
 1.  **Start developing.**
@@ -17,35 +23,59 @@
     gatsby develop
     ```
 
-2.  **Build.**
+2.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+<br />
+3.  **Build**
 
     ```
     gatsby build
     ```
 
-2.  **Uploading to live**
-    
-    1. ***Upload to University of Cambridge Maths - Personal public site.***
+4.  **Publish - Uploading to live (example only)** 
+<br />
+ 
+    1. ***Upload to University of Cambridge Maths - Personal public site.***  
     ```
-    ./deploy-cam--me-to-server.sh
+    npm run deploy:cam
     ```
-    1. ***Upload to surge***
+    2. ***Upload to surge***
     ```
-    ./build_and_surge.sh
+    npm rum deploy:surge
+    ```
+    3. ***Both at same time***
+    ```
+    npm run deploy
     ```
 
-1. 
+Commands above will not work at the stage of publishing. (Builds wlll still happen)
 
-1.  **Open the source code and start editing!**
+Example only. There is personal CI pipeline with Gitlab and Jenkins outside of code.
 
-    Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+## ⚠️ Issues
 
-## Notes
+### Prefix
+
+Currently as of development there is limitation with gatsby of uploading to two different sites, if one has prefix.
+
+Requires "gatsby clean" or rm /.cache (same). This is not recommended by gatsby cli doc but required due to gatsby limitation of uploading to 2 different sites, with one being under prefix "~jp835"
+
+It is not recommended because it takes long time for gatsby to generate cache from refresh, so "npm run start-clean" will take long time after "npm run deloy".
+
+Fix requiring to run clean build for url prefix for dpmms (Cambridge math) site by only deploying CI. Now locally it will be safe to not have to clean cache as I am not deploying with image pre-fixes change.
+
+e.g (prefix of ~jp835)
+https://www.dpmms.cam.ac.uk/~jp835
+https://www.dpmms.cam.ac.uk/~jp835/someStatic.jpg
+
 
 Need to clean due to /prefix-path, that does not get regenerated. GraphQL generate images are using wrong path for Cambridge personal page (/~jp835) VS surge. (/)
 https://github.com/gatsbyjs/gatsby/issues/2440
+
 
 ## 🧐 What's inside?
 

@@ -58,7 +58,7 @@ const About = (props) => {
             <div className="flex flex-row items-center mb-2">
               <i className="fas fa-code fa-sm w-1/12 lg:w-1/12 text-center mr-1"></i>
               <div className="w-11/12 lg:w-11/12">
-                Python, JS, Clojure, Html, CSS, SQL
+                Python, Django, Django REST, ORM, Flask, Javascript, React, Redux, Wagtail CMS, Clojure, Clojurescript, Reagent, Re-Frame, Html, CSS, Bootstrap, TailwindCSS, SQL
               </div>
             </div>
             <div className="flex flex-row items-center">

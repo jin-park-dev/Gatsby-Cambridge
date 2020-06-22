@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import "./about.css"
@@ -32,6 +33,7 @@ export const query = graphql`
 const About = (props) => {
   return (
     <Layout>
+      <SEO title="About" />
       <h1 className="mb-3 sm:mb-6">Hello, my name is Jin</h1>
 
       <div className="flex flex-col sm:flex-row text-sm items-center sm:items-start">

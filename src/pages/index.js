@@ -19,10 +19,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>I am a Full-Stack Developer</h1>
-    {/* <p>I love learning, good discpline and being social</p> */}
-    {/*<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>*/}
-    {/*  <Image />*/}
-    {/*</div>*/}
     {renderFolio()}
     <div className="text-blue-500 text-center">
       <a href="https://1drv.ms/w/s!AgNPDSf2wBb5prZrO9_sbCuoXln5Uw">

@@ -15,6 +15,10 @@
 -   =====> [Homepage on Uni of Cam - DPMMS](https://www.dpmms.cam.ac.uk/person/jp835) <=====
 -   =====> [Homepage on Surge](https://jin-dev.surge.sh/) <=====
 
+## 🤔 Motivation
+
+JAMStack is picking up noise in JS community. I wanted to make project with it but haven't had good reason until I found personal space at Maths department homepage with apache config. Their config does not allow django backend giving opporunity for me to build a page with a JAMStack.
+
 ## 🚀 Useful commands
 
 1.  **Start developing.**

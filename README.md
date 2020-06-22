@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Jin's CV, professional site.
+  Jin's CV - professional site.
 </h1>
 
 
